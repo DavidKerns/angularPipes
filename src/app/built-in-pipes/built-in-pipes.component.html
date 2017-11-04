@@ -1,4 +1,6 @@
 
  <p> My name is {{ 'Jack' | uppercase }} </p>
-    <p> Date: {{ today }} </p>
-       <p> Date: {{ today | date:'dd/MM/yyyy' }} </p>
+       <p> Date: {{ today }} </p>
+        <p> Date: {{ today | date:'dd/MM/yyyy' }} </p>
+
+        <button (click)="increment()"> Add one day! </button>
