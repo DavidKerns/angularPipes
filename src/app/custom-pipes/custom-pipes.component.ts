@@ -6,5 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./custom-pipes.component.css']
 })
 export class CustomPipesComponent {
+  today = new Date();
+   stuff: Array<Object> = [];
+   pattern: string;
 
-}
+   constructor() {}
+
+   ngOnInit() {}
+
+   addItem(item) {
+     this.stuff.push({name: item});
+   }
+ }
